@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nodedefs>
+<nodedef name="TextingService" class="vdab.extnodes.communication.TextingService">
+	<attr name="Group">Text</attr>
+	<attr name="ConsumedEventTypes">Event,Trigger</attr>
+    <attr name="PublishedEventTypes">Trigger,Boolean</attr>
+    <attr name="NodeDescTemplate">to ${PhoneNumber}</attr>
+    <datadef name="Provider">
+		<attr name="EditOrder" type="Integer">5</attr>
+		<attr name="RefreshOnChange" type="Boolean">true</attr>
+		<attr name="Enum">CommunicationServiceProvider</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="ApiKey">
+		<attr name="EditOrder" type="Integer">11</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="ApiSecret">
+		<attr name="SpecialType">Password</attr>
+		<attr name="EditOrder" type="Integer">12</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="AccountSID">
+		<attr name="EditOrder" type="Integer">13</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="Token">
+		<attr name="SpecialType">Password</attr>
+		<attr name="EditOrder" type="Integer">14</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="PhoneNumber">
+		<attr name="EditOrder" type="Integer">21</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="From">
+		<attr name="EditOrder" type="Integer">31</attr>
+		<attr name="Category">Required</attr>
+	</datadef>
+	<datadef name="Text">
+		<attr name="EditOrder" type="Integer">32</attr>
+		<attr name="Category">Required</attr>
+	</datadef>	
+</nodedef>
+</nodedefs>
